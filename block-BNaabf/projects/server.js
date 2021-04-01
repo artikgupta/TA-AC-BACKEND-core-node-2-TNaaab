@@ -2,6 +2,9 @@ var http = require("http");
 
 let server = http.createServer(handleServer);
 
+let fs = require("fs");
+let qu = require("qu");
+
 function handleServer(req, res) {
   let store = "";
   let contentType = req.headers["content-type"];
